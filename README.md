@@ -60,11 +60,35 @@ IPAddress subnet(255, 255, 255, 0);
 IPAddress primaryDNS(8, 8, 8, 8);   //optional
 IPAddress secondaryDNS(8, 8, 4, 4); //optional
 ```
-#### Setup
+#### Setup:
+
+Setup the interrupt pin so that the air pressure switch drives an interrupt when the button is pressed:
 ```cpp
     pinMode(INTERRUPT_PIN, INPUT_PULLUP);
     attachInterrupt(INTERRUPT_PIN, isr, CHANGE);
 ```
+
+Connect to WiFi given credentials.
+
+Start the WebServer to provide initial status message when app connects to the Webserver
+
+Start the UDP listener
+
+Initialize lights by starting the strip NeoPixel object and setting the color to the sepcified red, green, and blue values. 
+
+Start ArduinoOTA service so that FW updates can be done wirelessly since access to the hardware is difficult. 
+
+```cpp
+    startWifi();
+    startWebServer();
+
+    Udp.begin(localPortNum);
+
+    initializeLights();
+
+    setupArduinoOTA();
+```
+#### Loop:
 
 ### Android App
 
