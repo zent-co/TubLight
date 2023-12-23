@@ -24,7 +24,8 @@ The following sections describe the technical details of the Tub Light system.
 - The light can also be turned on and off via WiFi commands.
 - Uses a WebServer to establish initial connection with App and reports light state to App.
 - Uses a UDP port to receive on/off and color change messages.
-- UDP messages are sent via JSON formatted text. The firmware must deserialize the JSON message to set the proper light color. 
+- UDP messages are sent via JSON formatted text. The firmware must deserialize the JSON message to set the proper light color.
+- Firmware Updatable via FOTA from Arduino IDE
   
 ### Android App
 
