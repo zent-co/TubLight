@@ -18,78 +18,14 @@ The following sections describe the technical details of the Tub Light system.
 
 
 ### Firmware
-
-#### Initialization:
-
-```cpp
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRBW + NEO_KHZ800);
-
-AsyncWebServer server(80);
-
-WiFiUDP Udp;
-```
-
-The light state information is initialized. The initial state is for red, green, and blue LEDs all on full power, which turns the light on to white for a first power on. Additionally, various states are initialized as false and the light timeout timer is set to zero for the updated time and time since last interaction. 
-
-```cpp
-//light state information
-int r = 255;
-int g = 255;
-int b = 255;
-int w = 0;
-boolean powerIsrCalled = false;
-boolean togglePowerHandleCalled = false;
-boolean light_state = false;
-unsigned long old_time = 0;
-unsigned long new_time = 0;
-
-enum toggleLightReason {
-    TIMER_TIMEOUT,
-    INTERRUPT_CALLED,
-    HANDLE_CALLED
-};
-
-enum toggleLightReason toggleLightReason;
-```
-
-Set the IP address to 192.168.1.25 to keep the app in sync (unfortunately, local IP address is hard coded into app)
-```cpp
-IPAddress local_IP(192,168,1,25);
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 255, 0);
-IPAddress primaryDNS(8, 8, 8, 8);   //optional
-IPAddress secondaryDNS(8, 8, 4, 4); //optional
-```
-#### Setup:
-
-Setup the interrupt pin so that the air pressure switch drives an interrupt when the button is pressed:
-```cpp
-    pinMode(INTERRUPT_PIN, INPUT_PULLUP);
-    attachInterrupt(INTERRUPT_PIN, isr, CHANGE);
-```
-
-Connect to WiFi given credentials.
-
-Start the WebServer to provide initial status message when app connects to the Webserver
-
-Start the UDP listener
-
-Initialize lights by starting the strip NeoPixel object and setting the color to the sepcified red, green, and blue values. 
-
-Start ArduinoOTA service so that FW updates can be done wirelessly since access to the hardware is difficult. 
-
-```cpp
-    startWifi();
-    startWebServer();
-
-    Udp.begin(localPortNum);
-
-    initializeLights();
-
-    setupArduinoOTA();
-```
-#### Loop:
-
+- Connects to household WiFi, for local network use only.
+- 4 hour inactivity auto light shut off.
+- Physical button turns light on and off via interrupt service routine.
+- The light can also be turned on and off via WiFi commands.
+- Uses a WebServer to establish initial connection with App and reports light state to App.
+- Uses a UDP port to receive on/off and color change messages.
+- UDP messages are sent via JSON formatted text. The firmware must deserialize the JSON message to set the proper light color. 
+  
 ### Android App
 
 
