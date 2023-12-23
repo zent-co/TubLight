@@ -19,6 +19,52 @@ The following sections describe the technical details of the Tub Light system.
 
 ### Firmware
 
+#### Initialization:
+
+```cpp
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRBW + NEO_KHZ800);
+
+AsyncWebServer server(80);
+
+WiFiUDP Udp;
+```
+
+The light state information is initialized. The initial state is for red, green, and blue LEDs all on full power, which turns the light on to white for a first power on. Additionally, various states are initialized as false and the light timeout timer is set to zero for the updated time and time since last interaction. 
+
+```cpp
+//light state information
+int r = 255;
+int g = 255;
+int b = 255;
+int w = 0;
+boolean powerIsrCalled = false;
+boolean togglePowerHandleCalled = false;
+boolean light_state = false;
+unsigned long old_time = 0;
+unsigned long new_time = 0;
+
+enum toggleLightReason {
+    TIMER_TIMEOUT,
+    INTERRUPT_CALLED,
+    HANDLE_CALLED
+};
+
+enum toggleLightReason toggleLightReason;
+```
+
+Set the IP address to 192.168.1.25 to keep the app in sync (unfortunately, local IP address is hard coded into app)
+```cpp
+IPAddress local_IP(192,168,1,25);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
+IPAddress primaryDNS(8, 8, 8, 8);   //optional
+IPAddress secondaryDNS(8, 8, 4, 4); //optional
+```
+#### Setup
+```cpp
+    pinMode(INTERRUPT_PIN, INPUT_PULLUP);
+    attachInterrupt(INTERRUPT_PIN, isr, CHANGE);
+```
 
 ### Android App
 
