@@ -38,10 +38,9 @@ The following sections describe the technical details of the Tub Light system.
   
 #### Screenshots:
 | Initial Screen | Light Dimmed |
-| -------------- | ------------ |
-| ![Initial Screen](resources/appScreenshots/screenWithTurnPowerOn.png)  | ![Initial Screen](resources/appScreenshots/screenWithTurnSliderDimmed.png)   |
+| :--------------: | :------------: |
+| <img src="resources/appScreenshots/screenWithTurnPowerOn.png" width="100%" height="100%"> | <img src="resources/appScreenshots/screenWithTurnSliderDimmed.png" width="100%" height="100%">|
 
-[![Initial Screen](https://drive.google.com/file/d/1TLAa2hbJHlJc1kMml1bSH-LhY9FykrJv/view?usp=drive_link)]
 ## Future Feature Development List
 - Slow Color Change
 - Candle/Fire Flicker
