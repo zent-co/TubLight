@@ -23,10 +23,10 @@ The following sections describe the technical details of the Tub Light system.
 - Pneumatic push switch tied to ESP32 digital input ISR line to toggle power on and off.
 - Water tight box with cable gland for RGB light wiring.
 
-<img src="resources/hardware/lightAdapterFront.jpg" width="66%" height="66%">
-<img src="resources/hardware/lightAdapterSide.jpg" width="66%" height="66%">
-<img src="resources/hardware/openView.jpg" width="66%" height="66%">
-<img src="resources/hardware/tubLightInstalled.jpg" width="66%" height="66%">
+<img src="resources/hardware/lightAdapterFront.jpg" width="33%" height="33%">
+<img src="resources/hardware/lightAdapterSide.jpg" width="33%" height="33%">
+<img src="resources/hardware/openView.jpg" width="33%" height="33%">
+<img src="resources/hardware/tubLightInstalled.jpg" width="33%" height="33%">
 
 ### Firmware
 - Connects to household WiFi, for local network use only.
