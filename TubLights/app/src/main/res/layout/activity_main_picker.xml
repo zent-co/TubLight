@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#444444">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:backgroundTint="#FFF" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/powerToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/toggle_power"
+        android:visibility="invisible"/>
+
+    <com.flask.colorpicker.ColorPickerView
+        android:id="@+id/color_picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alphaSlider="true"
+        app:density="12"
+        app:lightnessSlider="true"
+        app:wheelType="FLOWER"
+        app:lightnessSliderView="@+id/v_lightness_slider"
+        android:visibility="invisible"
+        />
+
+    <com.flask.colorpicker.slider.LightnessSlider
+        android:id="@+id/v_lightness_slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:text="@string/watermelon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/watermelonButton"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="#ef000a"/>
+
+    <Button
+        android:text="@string/something_about_summer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/somethingAboutSummerButton"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="#c8c50a"/>
+
+    <Button
+        android:text="@string/beck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/beckButton"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="#b70020"/>
+    <Button
+        android:text="@string/jolene_s_pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joleneButton"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="#d50075"/>
+
+    <Button
+        android:text="@string/night_pool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nightPoolButton"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="#005050"/>
+
+
+
+</LinearLayout>
+</RelativeLayout>

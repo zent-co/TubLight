@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zenthoefer.tublights.screens.controlscreen.ControlScreenActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="25dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/seekBar"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <Button
+            android:text="Turn Lights Off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/turnOff"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+        <Button
+            android:text="Watermelon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/watermelonButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#ef000a" />
+
+        <Button
+            android:text="Something About Summer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/somethingAboutSummerButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#c8c50a"/>
+
+        <Button
+            android:text="Orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orangeButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#b43100"/>
+
+        <Button
+            android:text="Beck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/beckButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#b70020"/>
+        <Button
+            android:text="Jolene's Pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/joleneButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#d50075"/>
+
+        <Button
+            android:text="Night Pool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nightPoolButton"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="buttonPress"
+            android:background="#005050"/>
+
+        <Button
+            android:text="Red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/redButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#FF0000"/>
+
+        <Button
+            android:text="Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#0000FF"/>
+
+        <Button
+            android:text="Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/greenButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#00FF00"/>
+
+        <Button
+            android:text="Aqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aquaButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#00FFFF"/>
+        <Button
+            android:text="Yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yellowButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#FFFF00"/>
+        <Button
+            android:text="Purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/purpleButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#FF00FF"/>
+
+        <Button
+            android:text="White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/whiteButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress"
+            android:background="#FFFFFF"/>
+
+
+
+        <Button
+            android:text="Disable Mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/disableModeButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+        <Button
+            android:text="Twinkling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twinkleButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+        <Button
+            android:text="Breath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/breathButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+        <Button
+            android:text="Candle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candleButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+        <Button
+            android:text="Color Fade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/colorFadeButton"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="buttonPress" />
+
+
+    </LinearLayout>
+</RelativeLayout>

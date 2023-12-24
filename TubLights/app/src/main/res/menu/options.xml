@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Colors"
+        android:id="@+id/colors"></item>
+
+    <item android:title="Custom Colors"
+        android:id="@+id/custom"></item>
+
+    <item android:title="Modes"
+        android:id="@+id/modes"></item>
+</menu>
