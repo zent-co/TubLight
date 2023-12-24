@@ -23,6 +23,8 @@ The following sections describe the technical details of the Tub Light system.
 - Pneumatic push switch tied to ESP32 digital input ISR line to toggle power on and off.
 - Water tight box with cable gland for RGB light wiring.
 
+#### Hardware PIctures:
+
 | Tub Light Controller Installed | Tub Light Controller Opened |
 | :--------------: | :------------: |
 | <img src="resources/hardware/tubLightInstalled.jpg"> | <img src="resources/hardware/openView.jpg"> |
