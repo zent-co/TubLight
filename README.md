@@ -9,13 +9,14 @@ The original light was simply an incandesecnt bulb with an on/off switch in a se
 I imagined how I could improve this the tub light using a [Adafruit NeoPixel Jewel RGB LED assembly](https://www.adafruit.com/product/2859?gad_source=1&gclid=CjwKCAiAp5qsBhAPEiwAP0qeJkzRK5o67oNMlqqDC8S1sDyIZCz12_C3Y6A9JUmND2r-IASDWLSKcRoCs48QAvD_BwE) to acheive any color and brightness I wanted. The NeoPixel Jewel is controlled by a [Sparkfun ESP32 Thing Plus](https://www.sparkfun.com/products/15663?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJnRRSU4OE6ZlrzAAaxC8sL1j2-f2hIqKbaGOr5SEi_CV_tvKprVjEhoCCmUQAvD_BwE)
 
 #### Original Color Selection Demo Video Link and Tub Light System Demo Video Link:
-[![Original Tub Light Color Selection](resources/videoImages/OriginalColorChange.png)](https://www.youtube.com/watch?v=9z2hBdIpH5c "Original Tub Light Color Filter") [![Tub Light System Color Selection](resources/videoImages/TubLightSystemColorChange.png)](https://www.youtube.com/watch?v=xVnbhTjhsxw "Tub Light System Demo")
+[![Original Tub Light Color Selection](resources/videoImages/OriginalColorChange.png)](https://www.youtube.com/watch?v=9z2hBdIpH5c "Original Tub Light Color Filter") | [![Tub Light System Color Selection](resources/videoImages/TubLightSystemColorChange.png)](https://www.youtube.com/watch?v=xVnbhTjhsxw "Tub Light System Demo")
 
 ## Technical Overview
 The following sections describe the technical details of the Tub Light system.
 
 ### Hardware
-
+- Microcontroller/WiFi: [Sparkfun ESP32 Thing Plus](https://www.sparkfun.com/products/15663?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJnRRSU4OE6ZlrzAAaxC8sL1j2-f2hIqKbaGOr5SEi_CV_tvKprVjEhoCCmUQAvD_BwE)
+- 
 
 ### Firmware
 - Connects to household WiFi, for local network use only.
