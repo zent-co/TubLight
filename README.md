@@ -39,7 +39,7 @@ The following sections describe the technical details of the Tub Light system.
 #### Screenshots:
 | Initial Screen | Light Dimmed |
 | :--------------: | :------------: |
-| <img src="resources/appScreenshots/screenWithTurnPowerOn.png" width="100%" height="100%"> | <img src="resources/appScreenshots/screenWithTurnSliderDimmed.png" width="100%" height="100%">|
+| <img src="resources/appScreenshots/screenWithTurnPowerOn.png" width="66%" height="66%"> | <img src="resources/appScreenshots/screenWithTurnSliderDimmed.png" width="66%" height="66%">|
 
 ## Future Feature Development List
 - Slow Color Change
