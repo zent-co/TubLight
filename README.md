@@ -15,6 +15,7 @@ I imagined how I could improve this the tub light using a [Adafruit NeoPixel Jew
 The following sections describe the technical details of the Tub Light system.
 
 ### Hardware
+- Microcontroller/WiFi: [Sparkfun ESP32 Thing Plus](https://www.sparkfun.com/products/15663?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJnRRSU4OE6ZlrzAAaxC8sL1j2-f2hIqKbaGOr5SEi_CV_tvKprVjEhoCCmUQAvD_BwE)
 - 
 
 ### Firmware
