@@ -45,3 +45,4 @@ The following sections describe the technical details of the Tub Light system.
 - Slow Color Change
 - Candle/Fire Flicker
 - User based favorite color list
+- Move UDP code in App into ControllerCompositionRoot for depedency injection. 
