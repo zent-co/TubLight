@@ -39,7 +39,7 @@ The following sections describe the technical details of the Tub Light system.
 #### Screenshots:
 | Initial Screen | Light Dimmed |
 | -------------- | ------------ |
-| ![Initial Screen](https://drive.google.com/file/d/1TLAa2hbJHlJc1kMml1bSH-LhY9FykrJv/view?usp=drive_link)  | $250    |
+| ![Initial Screen](resources/appScreenshots/screenWithTurnPowerOn.png)  | ![Initial Screen](resources/appScreenshots/screenWithTurnSliderDimmed.png)   |
 
 [![Initial Screen](https://drive.google.com/file/d/1TLAa2hbJHlJc1kMml1bSH-LhY9FykrJv/view?usp=drive_link)]
 ## Future Feature Development List
